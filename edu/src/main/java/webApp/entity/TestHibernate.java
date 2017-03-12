@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name="testhibernate")
 public class TestHibernate {
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	Integer id;
 	@Column(name = "name")
