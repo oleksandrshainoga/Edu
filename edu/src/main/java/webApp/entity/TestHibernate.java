@@ -3,8 +3,10 @@ package webApp.entity;
 import javax.persistence.*;
 
 @Entity
-@Table
+@Table(name="testhibernate")
 public class TestHibernate {
+	@Id
+	@GeneratedValue
 	@Column(name = "id")
 	Integer id;
 	@Column(name = "name")
