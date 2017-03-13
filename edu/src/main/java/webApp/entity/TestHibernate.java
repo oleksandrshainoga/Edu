@@ -13,6 +13,7 @@ public class TestHibernate {
 	String name;
 	@Column(name = "pass")
 	String password;
+	
 
 	public TestHibernate() {
 		
@@ -53,5 +54,12 @@ public class TestHibernate {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	@Override
+	public String toString() {
+		return "TestHibernate [id=" + id + ", name=" + name + ", password=" + password + "]";
+	}
+	
+	
 
 }

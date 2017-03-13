@@ -12,7 +12,9 @@ public class Main {
 		System.out.println("qwe");
 		Session sesion = MySesionFactory.getSessionFactory().openSession();
 		sesion.beginTransaction();
-		sesion.save(new TestHibernate("root", "root"));
+		sesion.save(new TestHibernate("qwe", "asd"));
+		TestHibernate test=	sesion.get(TestHibernate.class, 1);
+		System.out.println(test);
 		sesion.close();
 	}
 
